@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "160985244563",
+    "firebase_url": "https://menu-reader-app.firebaseio.com",
+    "project_id": "menu-reader-app",
+    "storage_bucket": "menu-reader-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160985244563:android:693c00b96c712e8c",
+        "android_client_info": {
+          "package_name": "com.google.firebase.codelab.mlkit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "160985244563-d8eaqn9dhr6m9a01fbmsbn31qaog1fvk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM05SML6WncoeqkDfWtgWIhh2xdX4chKw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "160985244563-d8eaqn9dhr6m9a01fbmsbn31qaog1fvk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
