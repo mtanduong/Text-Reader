@@ -169,7 +169,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         });
         Spinner dropdown = findViewById(R.id.spinner);
         String[] items = new String[]{"Test Image 1 (Text)", "Test Image 2 (Text)", "Test Image 3" +
-                " (Face)", "Test Image 4 (Object)", "Test Image 5 (Object)"};
+                " (Face)", "Test Image 4 (Object)", "Test Image 5 (Object)", "Test Image 6 (Text)",
+                "Test Image 7 (Text)", "Text Image 8 (Text)"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout
                 .simple_spinner_dropdown_item, items);
         dropdown.setAdapter(adapter);
@@ -533,13 +534,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 mSelectedImage = getBitmapFromAsset(this, "mountain.jpg");
                 break;
             case 5:
-                mSelectedImage = getBitmapFromAsset(this, "sign");
+                mSelectedImage = getBitmapFromAsset(this, "sign.jpg");
                 break;
             case 6:
-                mSelectedImage = getBitmapFromAsset(this, "sign2");
+                mSelectedImage = getBitmapFromAsset(this, "sign2.jpg");
                 break;
             case 7:
-                mSelectedImage = getBitmapFromAsset(this, "sign3");
+                mSelectedImage = getBitmapFromAsset(this, "sign3.jpg");
                 break;
         }
         if (mSelectedImage != null) {
