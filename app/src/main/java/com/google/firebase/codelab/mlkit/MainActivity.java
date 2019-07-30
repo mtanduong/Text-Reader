@@ -58,6 +58,11 @@ import com.google.firebase.ml.vision.face.FirebaseVisionFaceDetectorOptions;
 import com.google.firebase.ml.vision.text.FirebaseVisionText;
 import com.google.firebase.ml.vision.text.FirebaseVisionTextRecognizer;
 
+import com.google.cloud.translate.Translate;
+import com.google.cloud.translate.Translate.TranslateOption;
+import com.google.cloud.translate.TranslateOptions;
+import com.google.cloud.translate.Translation;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -175,6 +180,21 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 .simple_spinner_dropdown_item, items);
         dropdown.setAdapter(adapter);
         dropdown.setOnItemSelectedListener(this);
+
+        // Instantiates a client
+        Translate translate = TranslateOptions.getDefaultInstance().getService();
+
+        // The text to translate
+        String text = "Hello, world!";
+
+        // Translates some text into Russian
+        Translation translation = translate.translate(
+                text, TranslateOption.sourceLanguage("en"), TranslateOption.targetLanguage("ru"));
+
+        // Print out translation
+        Log.d(TAG, "Text: " + text);
+        Log.d(TAG, "Translation: " + translation.getTranslatedText());
+
         initCustomModel();
     }
 
